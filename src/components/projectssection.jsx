@@ -1,46 +1,22 @@
-import Tag from "./tag"
-import internetIcon from "../assets/internet-light.png"
-import githubIcon from "../assets/github-light.png"
+import Project from "./project"
 
-export default function ProjectsSection({ image, title, description, date, tools, githubLink, demoLink, activityType }) {
+import justfitIcon from "../assets/justfit-project.png"
+import justfitDemoVideo from "../assets/justfit-demo-video.mp4"
+import kotesVideo from "../assets/kotes-video.mp4"
+import kostkanVideo from "../assets/kostkan-video.mp4"
+import { DateUtil } from "../utils/dateutil.js";
+
+export default function ProjectsSection({ image, title, description, date, tools, githubLink, demoLink, activityType, videoBackground }) {
     return (
-        <section className="relative bg-orange-50 rounded-xl shadow-lg px-4 py-2">
+        <section className="relative bg-black transition hover:shadow-gray-600 rounded-2xl shadow-xl px-4 py-2">
             <header>
-                <h1 className="text-orange-500 text-4xl font-bold py-10 pr-8 text-right">{"< PROJECTS />"}</h1>
+                <h1 className="text-white text-4xl font-bold py-10 pr-8 text-right">{"< PROJECTS />"}</h1>
             </header>
-
-            <section className="flex px-8 py-8 bg-white rounded-md">
-                <article className="flex items-center gap-x-4 w-full">
-                    <section className="flex flex-col gap-y-10 w-full">
-                        <section className="flex flex-col gap-y-4">
-                            <header className="flex justify-between items-center">
-                                <h1 className="text-xl font-bold">{title}</h1>
-                                <Tag text={"Hobby"} />
-                            </header>
-                            <div className="flex justify-between items-center">
-                                <p>{description}</p>
-                                <p>{date}</p>
-                            </div>
-                            <div className="flex flex-wrap gap-2">
-                                <Tag text="JavaScript" />
-                                <Tag text="C++" />
-                                <Tag text="NodeJS" />
-                                <Tag text="ExpressJS" />
-                                <Tag text="MongoDB" />
-                            </div>
-                        </section>
-                        <section className="flex gap-x-4 font-extrabold">
-                            <a className="bg-black text-white rounded-md px-2 py-1 cursor-pointer tracking-widest hover:bg-white hover:text-black hover:transition-all hover:duration-150" href={demoLink}>
-                                <img className="inline-block w-10 p-1" src={internetIcon} />DEMO
-                            </a>
-                            <a className="bg-black text-white rounded-md px-2 py-1 cursor-pointer tracking-widest hover:bg-white hover:text-black hover:transition-all hover:duration-150" href={githubLink}>
-                                <img className="inline-block w-10" src={githubIcon} />REPO
-                            </a>
-                        </section>
-                    </section>
-                </article>
+            <section className="flex flex-col gap-y-8 px-6 py-6">
+                <Project title="JustFit" description="Activity Tracking." date={DateUtil.getDateFormat()} image={justfitIcon} videoBackground={justfitDemoVideo} tools={["ReactJS", "ExpressJS", "NodeJS", "MongoDB"]} />
+                <Project title="Kostkan" description="Postman clone minimal." date={DateUtil.getDateFormat()} image={justfitIcon} videoBackground={kostkanVideo} tools={["HTML", "CSS", "JavaScript"]} />
+                <Project title="Kotes" description="Minimal notes taking." date={DateUtil.getDateFormat()} image={justfitIcon} videoBackground={kotesVideo} tools={["HTML", "CSS", "JavaScript"]} />
             </section>
-
         </section>
     )
 }

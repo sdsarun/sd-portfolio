@@ -1,10 +1,11 @@
-import { useState } from 'react'
 import HomePage from './pages/HomePage'
+import GetInTouch from './components/getintouch'
 
 function App() {
   return (
     <>
       <HomePage />
+      {/* <GetInTouch /> */}
     </>
   )
 }

@@ -1,10 +1,10 @@
-import Tag from "./Tag"
+import Tag from "./tag"
 
 export default function SkillsSection() {
     return (
-        <section className="px-4 py-2 bg-white rounded-xl shadow-lg">
+        <section className="px-4 py-2 bg-white rounded-xl shadow-lg transition-all hover:shadow-orange-200">
             <header>
-                <h1 className="text-orange-500 text-2xl font-bold py-3">{"< SKILLS />"}</h1>
+                <h1 className="text-orange-500 text-xl font-bold py-3">{"< SKILLS />"}</h1>
             </header>
             <article className="flex flex-col gap-y-6 p-3">
                 <section>
