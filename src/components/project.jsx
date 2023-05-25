@@ -25,10 +25,10 @@ export default function Project({ title, description, date, videoBackground, too
                     </div>
                 </section>
                 <section className="flex gap-x-4 font-extrabold">
-                    <a className="bg-black text-white rounded-md px-2 py-1 cursor-pointer tracking-widest hover:bg-white hover:text-black hover:transition-all hover:duration-150" href={demoLink}>
+                    <a className="bg-black text-white rounded-md px-2 py-1 cursor-pointer tracking-widest hover:bg-white hover:text-black hover:transition-all hover:duration-150" href={demoLink} target="_blank">
                         <img className="inline-block w-10 p-1" src={internetIcon} />DEMO
                     </a>
-                    <a className="bg-black text-white rounded-md px-2 py-1 cursor-pointer tracking-widest hover:bg-white hover:text-black hover:transition-all hover:duration-150" href={githubLink}>
+                    <a className="bg-black text-white rounded-md px-2 py-1 cursor-pointer tracking-widest hover:bg-white hover:text-black hover:transition-all hover:duration-150" href={githubLink} target="_blank">
                         <img className="inline-block w-10" src={githubIcon} />REPO
                     </a>
                 </section>

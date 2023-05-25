@@ -23,8 +23,8 @@ export default function Sidebar() {
             </Section>
             <Section header="< INFORMATION />" sectionStyle="px-4 py-2 bg-white rounded-xl shadow-lg transition-all hover:shadow-orange-200" headerStyle="text-orange-500 text-xl font-bold py-3">
                 <Article iconLeft={mailIcon} iconRight={sendmailIcon} header="sdsarun@outlook.com" type="E-Mail Address" leftHref={"mailto:sdsarun@outlookk.com"} target={"_blank"} />
-                <Article iconLeft={laptopIcon} header="Mixed" type="Work Type" leftHref={"#"} target={"_blank"} />
-                <Article iconLeft={locationIcon} header="Saraburi, Thailand" type="Location" leftHref={"#"} target={"_blank"} />
+                <Article iconLeft={laptopIcon} header="Mixed" type="Work Type" leftHref={"#"}  />
+                <Article iconLeft={locationIcon} header="Saraburi, Thailand" type="Location" leftHref={"#"} />
             </Section>
             <SkillsSection />
         </aside>
