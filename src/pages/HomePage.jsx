@@ -9,7 +9,7 @@ export default function HomePage() {
             <div className="container mx-auto pt-8 pb-16">
                 <Navbar />
             </div>
-            <div className="container mx-auto flex gap-x-6">
+            <div className="container mx-auto flex gap-x-6 max-md:flex-col max-md:gap-y-32">
                 <Sidebar />
                 <MainContent />
             </div>

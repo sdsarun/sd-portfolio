@@ -13,7 +13,7 @@ import sendmailIcon from "../assets/sendmail3.png"
 
 export default function Sidebar() {
     return (
-        <aside className="w-4/12 h-full flex flex-col gap-y-6 sticky top-6">
+        <aside className="w-4/12 h-full flex flex-col gap-y-6 sticky top-6 max-md:w-full max-md:static">
             <Section header="< CAREER PROFILE />" sectionStyle="px-4 py-2 bg-white rounded-xl shadow-lg transition-all hover:shadow-orange-200" headerStyle="text-orange-500 text-xl font-bold py-3">
                 <Article iconLeft={linkedinIcon} header="Sarun Daunghirun" type="LinkedIn" leftHref={"https://www.linkedin.com/in/sarun-daunghirun-166234266/"} target={"_blank"} />
                 <Article iconLeft={githubIcon} header="sdsarun" type="Github" leftHref={"https://github.com/sdsarun"} target={"_blank"} />
