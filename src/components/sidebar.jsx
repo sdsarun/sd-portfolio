@@ -19,7 +19,7 @@ export default function Sidebar() {
                 <Article iconLeft={githubIcon} header="sdsarun" type="Github" leftHref={"https://github.com/sdsarun"} target={"_blank"} />
             </Section>
             <Section header="< DOCUMENT />" sectionStyle="px-4 py-2 bg-white rounded-xl shadow-lg transition-all hover:shadow-orange-200" headerStyle="text-orange-500 text-xl font-bold py-3">
-                <Article iconLeft={resumeIcon} iconRight={downloadIcon} header="Resume" type="PDF" target={"_blank"} leftHref={"https://drive.google.com/drive/u/1/folders/19m_CZZ_bq9y4Mun7JaLL0weEZizHJs8F"} rightHref={"https://drive.google.com/drive/u/1/folders/19m_CZZ_bq9y4Mun7JaLL0weEZizHJs8F"} />
+                <Article iconLeft={resumeIcon} iconRight={downloadIcon} header="Resume" type="PDF" target={"_blank"} leftHref={"https://drive.google.com/file/d/1h0UlFKQprr-Q4VXKX7cOK9fyRpqc0lsT/view?usp=sharing"} rightHref={"https://drive.google.com/file/d/1h0UlFKQprr-Q4VXKX7cOK9fyRpqc0lsT/view?usp=sharing"} />
             </Section>
             <Section header="< INFORMATION />" sectionStyle="px-4 py-2 bg-white rounded-xl shadow-lg transition-all hover:shadow-orange-200" headerStyle="text-orange-500 text-xl font-bold py-3">
                 <Article iconLeft={mailIcon} iconRight={sendmailIcon} header="sdsarun@outlook.com" type="E-Mail Address" leftHref={"mailto:sdsarun@outlookk.com"} target={"_blank"} />
