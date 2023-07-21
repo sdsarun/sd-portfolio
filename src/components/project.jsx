@@ -3,7 +3,7 @@ import Tag from "./tag";
 import internetIcon from "../assets/internet-light.png"
 import githubIcon from "../assets/github-light.png"
 
-export default function Project({ title, description, date, videoBackground, tools, demoLink, githubLink }) {
+export default function Project({ title, description, date, videoBackground, tools, demoLink, githubLink, type }) {
     return (
         <article className="relative flex items-center gap-x-4 w-full bg-white rounded-lg px-8 py-8 shadow-lg">
             <div className="absolute bg-black z-10 opacity-70 top-0 bottom-0 left-0 right-0 rounded-lg"></div>
@@ -14,7 +14,7 @@ export default function Project({ title, description, date, videoBackground, too
                 <section className="flex flex-col gap-y-4">
                     <header className="flex justify-between items-center">
                         <h1 className="text-2xl font-bold">{title}</h1>
-                        <Tag text={"Hobby"} />
+                        <Tag text={type} />
                     </header>
                     <div className="flex justify-between items-center">
                         <p>{description}</p>
